@@ -23,7 +23,20 @@ body{
     padding: 1rem 3rem;
     border-radius: 15px;
     background-color: rgb(253, 224, 229);
+    animation: zoom1 0.5s ease-in;
 }
+
+@keyframes zoom1{
+    from{
+        transform: scale(40%);
+        opacity: 20%;
+    }
+    to{
+        transform: scale(100%);
+        opacity: 100%;
+    }
+}
+
 
 .card-1.active1{
     display: none;
@@ -97,12 +110,6 @@ body{
     font-size: 0.8rem;
 }
 
-
-
-
-
-
-
 .card-2{
     border: 2px solid rgba(247, 100, 125, 0.87);;
     text-align: center;
@@ -110,6 +117,18 @@ body{
     border-radius: 15px;
     background-color: rgb(255, 203, 212);
     display: none;
+    animation: zoom2 0.5s ease-in;
+}
+
+@keyframes zoom2{
+    from{
+        transform: scale(40%);
+        opacity: 20%;
+    }
+    to{
+        transform: scale(100%);
+        opacity: 100%;
+    }
 }
 
 .card-2.active2{
@@ -213,6 +232,18 @@ body{
     border-radius: 15px;
     background-color: rgb(255, 203, 212);
     display: none;
+    animation: zoom3 0.5s ease-in;
+}
+
+@keyframes zoom3{
+    from{
+        transform: scale(40%);
+        opacity: 20%;
+    }
+    to{
+        transform: scale(100%);
+        opacity: 100%;
+    }
 }
 
 .card-no.active3{
@@ -272,8 +303,6 @@ body{
     font-size: 0.8rem;
 }
 
-
-
 .card-yes{
     border: 2px solid rgb(252, 140, 183);;
     padding: 0.8rem 1.5rem;
@@ -287,7 +316,20 @@ body{
     border-radius: 7px;
     box-shadow: 0 0 70px rgb(247, 172, 185);
     display: none;
+    animation: zoom4 0.5s ease-in;
 }
+
+@keyframes zoom4{
+    from{
+        transform: scale(40%);
+        opacity: 20%;
+    }
+    to{
+        transform: scale(100%);
+        opacity: 100%;
+    }
+}
+
 
 .card-yes.active4{
     display: block;
@@ -364,4 +406,5 @@ body{
     .card-yes{
         width: 100%;
     }
+
 }
